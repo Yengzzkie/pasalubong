@@ -1,32 +1,43 @@
+import { Button } from "flowbite-react";
 
-"use client";
-
-import { Banner } from "flowbite-react";
-import { HiX } from "react-icons/hi";
-import { MdAnnouncement } from "react-icons/md";
-
-export function InfoBanner() {
+export default function Banner() {
   return (
-    <Banner className="my-2">
-      <div className="flex w-full justify-between border-b border-gray-200 bg-gray-700 p-4 dark:border-gray-600 dark:bg-gray-700">
-        <div className="mx-auto flex items-center">
-          <p className="flex items-center text-sm font-normal text-white dark:text-gray-400">
-            <MdAnnouncement className="mr-4 h-4 w-4" />
-            <span className="[&_p]:inline">
-              App version (Android) for the AnimHey! is now available for download&nbsp;
-              <a
-                href="https://download2264.mediafire.com/7km5joiav5ogaXf1ZfQuvNkpSEG08ak637rE7fkY0xs-rTIP4GC0_NNp3ygHGq_fm4ESTQMO4A3CEljyTX4ktiIE34prbeMQEkqWr32Ztr1ZDVrADYGlkb446lJips0euH77lvobptZRai08OjCNtit2HaxLfmqVI-nDs_fijw/5sjyxq8dsibxfqm/animhey.apk"
-                className="inline font-medium text-yellow-300 underline decoration-solid underline-offset-2 hover:no-underline dark:text-yellow-500"
-              >
-                here
-              </a>
-            </span>
-          </p>
-        </div>
-        <Banner.CollapseButton color="gray" className="border-0 bg-transparent text-gray-500 dark:text-gray-400">
-          <HiX className="h-4 w-4" />
-        </Banner.CollapseButton>
+    <div className="bg-[#070707] flex flex-col lg:flex-row items-center justify-evenly h-full lg:h-[80vh] w-screen">
+      {/* First Section */}
+      <div className="w-[50%] h-full">
+        <img
+          className="object-cover w-full h-full"
+          src="https://images.unsplash.com/photo-1536489885071-87983c3e2859?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="First Section Image"
+        />
       </div>
-    </Banner>
+
+      {/* Middle Section */}
+      <div className="flex flex-wrap w-full h-full">
+        <div className="w-1/2">
+          <img className="object-cover w-full h-full" src="https://images.unsplash.com/photo-1445979323117-80453f573b71?q=80&w=3546&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+        </div>
+        <div className="flex flex-col items-center justify-center w-1/2">
+          <h1 className="text-center text-white text-4xl text-wrap">View Full Menu</h1>
+          <Button className="button--shadow bg-transparent border-[var(--secondary)] rounded-none mt-6 mx-auto lg:mx-0">Click here</Button>
+        </div>
+        <div className="flex flex-col items-center justify-center w-1/2">
+          <h1 className="text-center text-white text-4xl text-wrap">Breakfast Menu</h1>
+          <Button className="button--shadow bg-transparent border-[var(--secondary)] rounded-none mt-6 mx-auto lg:mx-0">Click here</Button>
+        </div>
+        <div className="w-1/2">
+          <img className="object-cover w-full h-full" src="https://images.unsplash.com/photo-1658713064117-51f51ecfaf69?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+        </div>
+      </div>
+
+      {/* Last Section */}
+      <div className="w-[50%] h-full">
+        <img
+          className="object-cover w-full h-full"
+          src="https://images.unsplash.com/photo-1534596382981-1974b10d4e1a?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Last Section Image"
+        />
+      </div>
+    </div>
   );
 }
