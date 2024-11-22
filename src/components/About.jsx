@@ -31,7 +31,7 @@ export default function About() {
       <div className="relative max-w-72 lg:max-w-[25vw] mt-6">
         <div className="absolute -top-8 -left-8 lg:-top-12 lg:-left-12 bg-[var(--primary)] w-[20vw] h-[20vw] lg:w-32 lg:h-32 z-10"></div>
         <div className="absolute -top-4 -left-4 lg:-top-6 lg:-left-6 border-[var(--secondary)] border-[8px] bg-transparent w-[20vw] h-[20vw] lg:w-32 lg:h-32"></div>
-        <img className="shadow-lg border z-10" src="../assets/pasalogo.jpg" alt="random-photo"/>
+        <img className="shadow-lg border z-10" src="/assets/pasalogo.jpg" alt="pasalubong-photo"/>
         <div className="absolute -bottom-4 -right-4 bg-yellow-400 w-[50%] h-[50%] -z-10"></div>
       </div>
     </div>

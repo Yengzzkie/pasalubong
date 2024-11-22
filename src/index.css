@@ -15,6 +15,12 @@
   --secondary: #e3a008;
 }
 
+nav {
+  a {
+    color: var(--secondary)
+  }
+}
+
 a {
   color: red;
 }
