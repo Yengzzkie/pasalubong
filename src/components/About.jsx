@@ -10,11 +10,11 @@ export default function About() {
           <span className="bg-[var(--primary)] w-full h-1"></span>
         </div>
 
-        <h1 className="text-3xl lg:text-6xl my-6">
-          We are more than just a restaurant, we are <span className="font-medium">Family</span>.
+        <h1 className="font-garamond font-semibold text-3xl lg:text-6xl my-6">
+          We are more than just a restaurant, we are <span className="font-bold">Family</span>.
         </h1>
 
-        <p className="text-sm lg:text-base">
+        <p className="font-roboto text-sm font-light tracking-wider lg:text-base">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque non
           molestiae cumque, corrupti, ipsam, aliquam mollitia dolores eveniet
           ullam libero exercitationem distinctio. Quo ducimus quia itaque,
@@ -27,7 +27,7 @@ export default function About() {
           odio ad amet. Praesentium dolore omnis quia alias voluptatibus.
         </p>
 
-        <Button className="bg-[var(--secondary)] rounded-none mt-6 mx-auto lg:mx-0">Learn More About Us</Button>
+        <Button className="bg-[var(--secondary)] font-roboto rounded-none mt-6 mx-auto lg:mx-0">Learn More About Us</Button>
       </div>
       <div className="relative max-w-72 lg:max-w-[25vw] mt-6">
         <div className="absolute -top-8 -left-8 lg:-top-12 lg:-left-12 bg-[var(--primary)] w-[20vw] h-[20vw] lg:w-32 lg:h-32 z-10"></div>

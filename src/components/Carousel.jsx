@@ -29,8 +29,8 @@ export default function GalleryWithCarousel() {
           {new Array(length).fill("").map((_, i) => (
             <span
               key={i}
-              className={`block h-2.5 cursor-pointer rounded-2xl transition-all content-[''] ${
-                activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
+              className={`block h-2.5 cursor-pointer rounded-2xl transition-all content-[''] shadow-md ${
+                activeIndex === i ? "w-8 bg-white" : "w-4 bg-[#e3a008c3]"
               }`}
               onClick={() => setActiveIndex(i)}
             />
@@ -39,7 +39,7 @@ export default function GalleryWithCarousel() {
       )}
       loop={true}
       autoplay={true}
-      className="items-center h-screen w-screen mt-0"
+      className="items-center h-[60vh] w-screen mt-0"
     >
       {featured.map((feature, index) => (
         <div
@@ -52,14 +52,14 @@ export default function GalleryWithCarousel() {
             className="h-full w-full object-cover"
             // style={{ maxHeight: "288px" }}
           />
-          <div className="bg=[#252525a8] backdrop-blur-md absolute top-0 left-0 font-semibold w-full h-full">
+          <div className="bg=[#252525a8] absolute top-0 left-0 font-semibold w-full h-full">
             <div className="absolute top-1/2 left-1/2 flex flex-col items-center justify-center gap-6 -translate-x-1/2 -translate-y-1/2 w-full">
-              <img
+              {/* <img
                 src={feature.src}
                 className="w-1/2 rounded-md top-image"
-              />
+              /> */}
               <div className="flex flex-col items-center gap-2">
-                <h1 className="text-white text-lg lg:text-2xl text-shadow">
+                <h1 className="text-white text-lg font-garamond lg:text-6xl text-shadow">
                   {feature.title}
                 </h1>
                 <span className="bg-yellow-400 text-white rounded-md w-fit px-2 status-badge">

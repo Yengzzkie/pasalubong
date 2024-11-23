@@ -18,11 +18,11 @@ export default function Banner() {
           <img className="object-cover w-full h-full" src="https://images.unsplash.com/photo-1445979323117-80453f573b71?q=80&w=3546&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
         </div>
         <div className="flex flex-col items-center justify-center w-1/2">
-          <h1 className="text-center text-white text-lg lg:text-4xl text-wrap">View Full Menu</h1>
+          <h1 className="text-center text-white font-garamond text-lg lg:text-5xl text-wrap">View Full Menu</h1>
           <Link to="/" className="text-white tracking-wider pb-1 border-b-2 border-[var(--secondary)] mt-4 mx-auto lg:mx-0">CLICK HERE</Link>
         </div>
         <div className="flex flex-col items-center justify-center w-1/2">
-          <h1 className="text-center text-white text-lg lg:text-4xl  text-wrap">Breakfast Menu</h1>
+          <h1 className="text-center text-white font-garamond text-lg lg:text-5xl  text-wrap">Breakfast Menu</h1>
           <Link to="/" className="text-white tracking-wider pb-1 border-b-2 border-[var(--secondary)] mt-4 mx-auto lg:mx-0">CLICK HERE</Link>
         </div>
         <div className="w-1/2">
