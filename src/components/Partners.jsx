@@ -1,15 +1,20 @@
+import hoopyah from "../../assets/hoopyah.png";
+import harina from "../../assets/harina.png";
+import goldilocks from "../../assets/goldilocks.svg";
+import muhlach from "../../assets/muhlach.png";
+
 const partnerLogo = [
   {
-    src: "../../assets/hoopyah.png",
+    src: hoopyah,
   },
   {
-    src: "../../assets/harina.png",
+    src: harina,
   },
   {
-    src: "../../assets/goldilocks.svg",
+    src: goldilocks,
   },
   {
-    src: "../../assets/muhlach.png",
+    src: muhlach,
   },
 ];
 
