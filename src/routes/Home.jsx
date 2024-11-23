@@ -1,6 +1,7 @@
-import FeaturedCarousel from "../components/Carousel"
-import About from "../components/About"
-import Banner from "../components/Banner"
+import FeaturedCarousel from "../components/Carousel";
+import About from "../components/About";
+import Banner from "../components/Banner";
+import Partners from "../components/Partners";
 
 function Home() {
   return (
@@ -8,6 +9,7 @@ function Home() {
       <FeaturedCarousel />
       <About />
       <Banner />
+      <Partners />
     </div>
   )
 }
