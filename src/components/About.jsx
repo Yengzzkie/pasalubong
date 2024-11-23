@@ -3,7 +3,7 @@ import pasalogo from "../../assets/pasalogo.jpg"
 
 export default function About() {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-evenly h-full lg:h-screen w-screen px-10">
+    <div className="flex flex-col lg:flex-row items-center justify-evenly h-full lg:h-screen w-screen px-10 mb-20 lg:mb-0">
       <div className="about__header--container px-10 my-8 w-screen lg:pl-10 lg:pr-40 lg:max-w-[50vw]">
         <div className="flex items-center">
           <h1 className="text-md lg:text-xl text-nowrap mr-6 tracking-wider">PASALUBONG905</h1>
